@@ -1,0 +1,333 @@
+@import "../style/fonts.css";
+
+/* *********************** */
+/* Root Start */
+:root {
+  --f100: "WPN_Light";
+  --f900: "WP_Bold";
+  --f100_S: "SemiLight";
+  --f900_S: "Semibold";
+  --liner-nav:linear-gradient(to bottom,#37b2f8, #1784d1);
+  --liner-btn:linear-gradient(to bottom,#6dd258, #35ae22);
+  --color-blue: #1298dd;
+  --color-grey: #8d8d8d;
+  --color-green: #51c03d;
+  --color-white: #ffff;
+  --color-bg: #ececec;
+  --b_sh: rgba(0, 0, 0, 0.311);
+  --cal1: calc(100% / 12);
+  --cal2: calc(100% / 12 * 2);
+  --cal3: calc(100% / 12 * 3);
+  --cal4: calc(100% / 12 * 4);
+  --cal5: calc(100% / 12 * 5);
+  --cal6: calc(100% / 12 * 6);
+  --cal7: calc(100% / 12 * 7);
+  --cal8: calc(100% / 12 * 8);
+  --cal9: calc(100% / 12 * 9);
+  --cal10: calc(100% / 12 * 10);
+  --cal11: calc(100% / 12 * 11);
+  --cal12: calc(100%);
+}
+::-webkit-scrollbar {
+  width: 0%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  background: var(--color-bg);
+}
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.col-1 {
+  width: var(--cal1);
+  padding: 0 15px;
+}
+.col-2 {
+  width: var(--cal2);
+  padding: 0 15px;
+}
+.col-3 {
+  width: var(--cal3);
+  padding: 0 15px;
+}
+.col-4 {
+  width: var(--cal4);
+  padding: 0 15px;
+}
+.col-5 {
+  width: var(--cal5);
+  padding: 0 15px;
+}
+.col-6 {
+  width: var(--cal6);
+  padding: 0 15px;
+}
+.col-7 {
+  width: var(--cal7);
+  padding: 0 15px;
+}
+.col-8 {
+  width: var(--cal8);
+  padding: 0 15px;
+}
+.col-9 {
+  width: var(--cal9);
+  padding: 0 15px;
+}
+.col-10 {
+  width: var(--cal10);
+  padding: 0 15px;
+}
+.col-11 {
+  width: var(--cal11);
+  padding: 0 15px;
+}
+.col-12 {
+  width: var(--cal12);
+  padding: 0 15px;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-around{
+  justify-content: space-around;
+}
+.justify-content-evenly{
+  justify-content: space-evenly;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+.align-items-start {
+  align-items: flex-start;
+}
+.flex-colum {
+  flex-direction: column;
+}
+.flex-grow-1 {
+  flex-grow: 1;
+}
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.mh-100 {
+  min-height: 100vh;
+}
+/* Root End */
+/* *********************** */
+/* Header Start */
+.header-navigation{
+  position: relative;
+  box-shadow: 0 5px 5px -5px var(--b_sh);
+}
+.nav{
+  margin: 20px 0;
+}
+.header-title{
+  color: var(--color-grey);
+  font-size: 36px;
+  line-height: 23px;
+  font-family: var(--f100_S);
+}
+.header-span{
+  font-size: 37px;
+  line-height: 28px;
+  color: var(--color-blue);
+  font-family: var(--f900_S);
+}
+.nav-a{
+  display: inline-block;
+  color: var(--color-grey);
+  font-size: 16px;
+  font-family: var(--f100_S);
+  line-height: 13px;
+  padding: 9px 13px;
+  border-radius: 5px;
+  transition: background 0.5s, color 0.5s;
+}
+.nav-a:hover{
+  color: var(--color-white);
+  background: var(--liner-nav);
+}
+.header-img{
+  object-fit: cover;
+  background-attachment: fixed;
+}
+.header-content{
+  margin-top: -500px;
+}
+.header-content-text{
+  font-size: 65px;
+  /* line-height: 37px; */
+  color: #ffff;
+}
+.header-content-text:first-of-type{
+  font-family: var(--f900_S);
+  margin-bottom: 25px;
+}
+.header-content-text:last-of-type{
+  font-family: var(--f100_S);
+  margin-bottom: 40px;
+}
+.btn{
+  display: inline-block;
+  font-size: 35px;
+  padding: 15px 55px;
+  background: var(--liner-btn);
+  color: #ffff;
+  font-family:var(--f900_S);
+  border-radius: 5px;
+}
+.btn:hover{
+  box-shadow: 0 0 0 2px var(--color-green), 0 0 0 4px #3A2F28;
+}
+/* Header End */
+/* **************************** */
+/* Main Start */
+.main-content-1{
+  padding: 23px 18px 8px 18px;
+  background: var(--color-white);
+  border-bottom: 7px solid var(--color-green);
+  border-radius: 5px;
+  margin-top: 63px ;
+}
+.content-title{
+  font-size: 23px;
+  font-family: var(--f100);
+  color: var(--color-grey);
+  margin-bottom: 27px;
+}
+.content-menu-box{
+  margin-bottom: 15px;
+}
+.menu-text{
+  font-size: 15px;
+  font-family: var(--f100_S);
+  color: var(--color-grey);
+}
+.main-content-2{
+  font-size: 27px;
+  font-family: var(--f100_S);
+  color: var(--color-grey);
+}
+.main-content-2:first-of-type{
+  margin-top: 63px; 
+  margin-bottom: 12px; 
+}
+.main-content-3{
+  margin-top: 55px;
+  margin-bottom: 80px;
+}
+.content-item{
+  margin-left: 73px;
+}
+.item-logo{
+  display: inline-block;
+  background: var(--color-white);
+  border-radius: 50%;
+  color: var(--color-blue);
+  padding: 20px;
+}
+.logo-size{
+  font-size: 98px;
+}
+.logo-text{
+  font-size: 21px;
+  margin-top: 20px;
+  font-family: var(--f100_S);
+  color: var(--color-grey);
+}
+/* Main End */
+/* ******************************* */
+/* Footer Start */
+.footer{
+  background: #414141;
+  padding: 8px 0;
+}
+.footer-text{
+  color: var(--color-grey);
+  font-size: 15px;
+  font-family: var(--f100_S);
+}
+/* Footer End */
+/* ******************************* */
+@media(max-width:965px){
+  .headere{
+    align-items: center;
+  }
+  .header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 90%; */
+  }
+  .header-content-text{
+    text-align: center;
+  }
+}
+@media(max-width:905px){
+  .header-nav{
+    width: 50%;
+  }
+  .main-content-3{
+    justify-content: center;
+  }
+  .content-item{
+    margin: 3%;
+  }
+  .main-content-2, .content-title{
+    text-align: center;
+  }
+}
+@media(max-width:758px){
+  .header-content{
+    margin-top:-800px;
+  }
+  .header-nav{
+    width: 60%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }  
+  .nav{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .nav-a{
+    width: max-content;
+  }
+  .header-title{
+    margin-bottom: 15px;
+  }
+}
+
+
+
+

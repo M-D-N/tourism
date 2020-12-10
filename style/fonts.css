@@ -1,0 +1,16 @@
+@font-face{
+  font-family:'WP_Bold';
+  src: url(../font/ofont.ru_Segoe\ WP.ttf);
+}
+@font-face{
+  font-family: 'WPN_Light';
+  src: url(../font/ofont.ru_Segoe\ WP\ Light.ttf);
+}
+@font-face{
+  font-family:'Semibold';
+  src: url(../font/ofont.ru_Segoe\ WP\ Semibold.ttf);
+}
+@font-face{
+  font-family:'SemiLight';
+  src: url(../font/ofont.ru_Segoe\ WP\ SemiLight.ttf);
+}
